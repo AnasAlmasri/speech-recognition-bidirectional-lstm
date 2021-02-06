@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/noonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15" />
+
+    <FrameLayout
+        android:id="@+id/upperFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|clip_vertical"
+        android:layout_weight="0.3" />
+
+    <View
+        android:id="@+id/separatorLineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.01"
+        android:background="#707070"
+        android:backgroundTint="@android:color/black" />
+
+    <FrameLayout
+        android:id="@+id/lowerFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|clip_vertical"
+        android:layout_weight="0.39" />
+
+
+</LinearLayout>
